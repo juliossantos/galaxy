@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    background: #121214;
+    display: grid;
+    place-content: center;
+    padding: 7.3rem 10rem;
+}
+
+header h1 {
+    font-size: clamp(3.5rem, 2vw + 1rem, 6rem);
+    color: #02799D;
+    font-style: normal;
+    font-weight: 900;
+}
+
+header p {
+    color: #E1E1E6;
+    font-size: clamp(2rem, 1vw + 1rem, 3.2rem);
+    font-style: normal;
+    font-weight: 600;
+}
+
+main {
+    display: grid;
+    row-gap: 4.4rem;
+    max-width: 425rem;
+}
+
+header {
+    margin-bottom: 6.2rem;
+}
+
+.card {
+    background-color: #202024;
+    width: 36rem;
+    border-radius: 8px;
+    border: 2px solid #323238;
+    overflow: hidden;
+}    
+
+
+.card h1 {
+    color: #E1E1E6;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 900;
+    padding: 2.4rem 3.2rem ;
+}
+.card p {
+    color: #C4C4CC;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal  ;
+    padding: 0 3.2rem 3.2rem 3.2rem;
+}
+
+@media (min-width: 1024px) {
+    main{
+        grid-template-columns: repeat(3, 36rem);
+        grid-template-rows: repeat(2, 50rem);
+        column-gap: 6rem;
+    }
+    
+    .card {
+        box-sizing: content-box;
+    }
+
+    .card h1 {
+        padding: 2.4rem 3.2rem ;
+    }
+
+    .card p {
+        padding: 0 3.2rem 3.2rem 3.2rem;
+    }
+
+}
